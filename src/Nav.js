@@ -31,6 +31,9 @@ function Nav() {
                                             </li>
                                         </>
                                     }
+                                    <li className="nav-item mobile-nav">
+                                        <NavLink className="nav-link" to="/info">Profile</NavLink>
+                                    </li>
                                     {token &&
                                     <li className="nav-item">
                                         <button className="nav-link" onClick={logout}>
