@@ -25,7 +25,7 @@ const AccountUpdate = () => {
 
   async function getAccountInfo() {
     try {
-      let url = `${process.env.REACT_APP_API_HOST}/api/accounts/${userId}`;
+      let url = `${process.env.REACT_APP_API_HOST}/accounts/${userId}`;
       let response = await fetch(url, {
         credentials: 'include',
       });
