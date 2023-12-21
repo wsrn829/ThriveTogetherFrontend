@@ -34,6 +34,21 @@ function Nav() {
                                     <li className="nav-item mobile-nav">
                                         <NavLink className="nav-link" to="/info">Profile</NavLink>
                                     </li>
+                                    <li className="nav-item mobile-nav">
+                                        <NavLink className="nav-link" to="/inbox">Inbox</NavLink>
+                                    </li>
+                                    <li className="nav-item mobile-nav">
+                                        <NavLink className="nav-link" to="/matches">Matches</NavLink>
+                                    </li>
+                                    <li className="nav-item mobile-nav">
+                                        <NavLink className="nav-link" to="/peers">Peers</NavLink>
+                                    </li>
+                                    <li className="nav-item mobile-nav">
+                                        <NavLink className="nav-link" to="/edit_tags">Edit Tags</NavLink>
+                                    </li>
+                                    <li className="nav-item mobile-nav">
+                                        <NavLink className="nav-link" to="/peer_connections">Peer Requests</NavLink>
+                                    </li>
                                     {token &&
                                     <li className="nav-item">
                                         <button className="nav-link" onClick={logout}>

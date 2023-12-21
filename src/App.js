@@ -15,6 +15,7 @@ import InboxPage from "./Messages/InboxPage.js";
 import "./Messages/styles.css";
 import PeerConnectionList from "./PeerConnectionList.js";
 import LandingPage from "./LandingPage.js";
+import "./Mobile.css";
 
 
 function App() {
