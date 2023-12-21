@@ -22,21 +22,21 @@ function App() {
   const basename = process.env.PUBLIC_URL.replace(domain, "");
 
 
-  useEffect(() => {
-    async function getData() {
-      let url = `${process.env.REACT_APP_API_HOST}/api/launch-details`;
-      console.log("fastapi url: ", url);
-      let response = await fetch(url);
-      console.log("------- hello? -------");
+  // useEffect(() => {
+  //   async function getData() {
+  //     let url = `${process.env.REACT_APP_API_HOST}/api/launch-details`;
+  //     console.log("fastapi url: ", url);
+  //     let response = await fetch(url);
+  //     console.log("------- hello? -------");
 
-      if (response.ok) {
-        console.log("got launch data!");
-      } else {
-        console.log("drat! something happened");
-      }
-    }
-    getData();
-  }, []);
+  //     if (response.ok) {
+  //       console.log("got launch data!");
+  //     } else {
+  //       console.log("drat! something happened");
+  //     }
+  //   }
+  //   getData();
+  // }, []);
 
   return (
     <BrowserRouter basename={basename}>
