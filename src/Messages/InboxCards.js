@@ -34,7 +34,7 @@ function InboxCards(props) {
             if (!userDataLoaded || !userData) {
               return;
             } else {
-                let url = `${process.env.REACT_APP_API_HOST}/api/messages/${userData["id"]}`;
+                let url = `${process.env.REACT_APP_API_HOST}/messages/${userData["id"]}`;
                 let response = await fetch(
                     url,
                     {
