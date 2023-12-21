@@ -27,7 +27,7 @@ const AccountForm = () => {
         };
         register(
             accountData,
-            `${process.env.REACT_APP_API_HOST}/api/accounts`
+            `${process.env.REACT_APP_API_HOST}/accounts`
         );
         e.target.reset();
         navigate('/login');
