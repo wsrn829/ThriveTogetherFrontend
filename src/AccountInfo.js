@@ -10,6 +10,10 @@ const AccountInfo = () => {
             let url = `${process.env.REACT_APP_API_HOST}/accounts/${userId}`;
             let response = await fetch(url, {
                 credentials: "include",
+                headers: {
+                    'Access-Control-Allow-Origin' : '*',
+                    'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+                }
             });
             let data = await response.json();
 
