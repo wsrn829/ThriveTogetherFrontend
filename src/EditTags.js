@@ -20,7 +20,7 @@ const EditTags = () => {
         }, [userTags, allTags]);
 
     const getUserTags = useCallback(async () => {
-            let url=`${process.env.REACT_APP_API_HOST}/tags/${userData["username"]}`;
+            let url=`${process.env.REACT_APP_API_HOST}/api/tags/${userData["username"]}`;
             let response = await fetch(
                 url,
                 {
@@ -54,7 +54,7 @@ const EditTags = () => {
         }
 
         async function getAllTags() {
-            let url=`${process.env.REACT_APP_API_HOST}/tags`
+            let url=`${process.env.REACT_APP_API_HOST}/api/tags`
             let response = await fetch(url)
             let data = await response.json();
 
@@ -79,7 +79,7 @@ const EditTags = () => {
 
     async function deleteTag(event) {
         event.preventDefault();
-        const url = `${process.env.REACT_APP_API_HOST}/tags/${event.target.value}`;
+        const url = `${process.env.REACT_APP_API_HOST}/api/tags/${event.target.value}`;
         const fetchConfig = {
             method: "delete",
             credentials: "include",
@@ -94,7 +94,7 @@ const EditTags = () => {
 
     async function handleSubmit(event) {
         event.preventDefault();
-        const url = `${process.env.REACT_APP_API_HOST}/tags/${tagToAdd}`;
+        const url = `${process.env.REACT_APP_API_HOST}/api/tags/${tagToAdd}`;
         const fetchConfig = {
             method: "post",
             credentials: "include",

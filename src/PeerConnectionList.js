@@ -25,7 +25,7 @@ const PeerConnectionList = () => {
       if (!loginAccount) {
         return;
       }
-      let listUrl = `${process.env.REACT_APP_API_HOST}/peer_connections/${loginAccount.id}`;
+      let listUrl = `${process.env.REACT_APP_API_HOST}/api/peer_connections/${loginAccount.id}`;
       const response = await fetch(listUrl, {
         credentials: "include",
       });

@@ -35,7 +35,7 @@ function InboxMessage(props){
 
     const getPeers = useCallback(async () => {
         const user_id = userData["id"];
-        const url = `${process.env.REACT_APP_API_HOST}/peers/${user_id}`;
+        const url = `${process.env.REACT_APP_API_HOST}/api/peers/${user_id}`;
         const response = await fetch(url, {
           credentials: "include",
         });

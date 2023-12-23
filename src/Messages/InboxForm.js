@@ -27,7 +27,7 @@ function InboxForm(props) {
     const fetchInitialConversation = useCallback( async () => {
         try {
 
-            const messagesUrl = `${process.env.REACT_APP_API_HOST}/messages/${userData["id"]}/message/${recipient.recipient}`; // Assuming 2 is the recipient ID
+            const messagesUrl = `${process.env.REACT_APP_API_HOST}/api/messages/${userData["id"]}/message/${recipient.recipient}`; // Assuming 2 is the recipient ID
             const fetchConfig = {
             credentials: 'include',
             method: "GET",

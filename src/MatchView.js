@@ -31,7 +31,7 @@ const MatchView = () => {
 
   useEffect(() => {
     async function getUserTags() {
-      let url = `${process.env.REACT_APP_API_HOST}/tags/${userData["username"]}`;
+      let url = `${process.env.REACT_APP_API_HOST}/api/tags/${userData["username"]}`;
       let response = await fetch(url, {
         credentials: "include",
       });
