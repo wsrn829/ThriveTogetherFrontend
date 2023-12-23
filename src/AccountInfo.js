@@ -7,9 +7,15 @@ const AccountInfo = () => {
 
     async function getAccountInfo() {
         try {
-            let url = `${process.env.REACT_APP_API_HOST}/api/accounts/${userId}`;
+            let url = `${process.env.REACT_APP_API_HOST}/accounts/${userId}`;
             let response = await fetch(url, {
                 credentials: "include",
+                headers: {
+                    'Access-Control-Allow-Origin' : '*',
+                    'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+                    'Content-Type': 'application/json'
+                    // 'Content-Type': 'application/x-www-form-urlencoded'
+                }
             });
             let data = await response.json();
 

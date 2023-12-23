@@ -1,10 +1,27 @@
-# Getting Started with Create React App
+# ThriveTogether
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thrive Together is your go-to app that creates a safe space for people experiencing mental health concerns to connect, find support, and mentor each other. This platform allows users to message each other safely and securely after connecting based on shared experiences.
 
-## Available Scripts
+Thrive Together - connecting like-minded folks.
 
-In the project directory, you can run:
+You can visit the site here: https://thrive-together.net/
+
+## Developed by:
+
+Clarisse Alvarez
+Sarina Wu
+Tanner Jackson
+Liangjian Chen
+Amanda Gifford
+
+## Installation Instructions
+
+1. Fork this repository.
+2. Clone the forked repository onto your local computer and inside of your chosen directory:
+
+   git clone <<respository.url.here>>
+
+3. In the project directory, you can run:
 
 ### `npm start`
 
@@ -29,42 +46,15 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Design
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The whole of the app is easily navigable by the links in the navbars to the top and left sides of the screen.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Users can sign up for an account, and then login and logout.
+Upon login, the user can view their own profile page as well as other user profile pages.
+The user can update their profile when logged in to their account.
+The user can view a list of tags, add new tags to their profile, as well as delete tags from their profile.
+The user can view people with the same tags and send peer requests.
+The person who receives a peer request can accept or reject it.
+After a peer request is accepted, the user will be added to the peer list page.
+The inbox is available for peers who have connected to message each other back and forth.

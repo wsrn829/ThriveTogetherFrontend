@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
         <img src={logo} alt="Logo" className="d-inline-block align-text-top logo circle" />
       </div>
       <header className="bg-darkblue">
-          <div className="nav-container">
+          <div className="nav-container landing-nav">
               <nav className="navbar nav navbar-expand-lg">
                   <div className="container-fluid">
                       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,9 +32,9 @@ import { NavLink } from "react-router-dom";
           </div>
           <div className="vertical-nav bg-midblue dark-text"></div>
       </header>
-      <main className='main-content'>
+      <main className='main-content landing-page'>
         <div className='tagline'>
-          <h1 className='content-container rounded-edges d-flex justify-content-center' style={{width: "450px"}}>Thrive Together</h1>
+          <h1 className='content-container rounded-edges d-flex justify-content-center'>Thrive Together</h1>
           <h3 className='content-container rounded-edges subtitle'>Connecting like-minds</h3>
         </div>
         <div className='lottie'>

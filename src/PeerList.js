@@ -29,7 +29,7 @@ function PeerList() {
       return;
     } else {
       const response = await fetch(
-        `${process.env.REACT_APP_API_HOST}/api/peers/${peerData["id"]}`,
+        `${process.env.REACT_APP_API_HOST}/peers/${peerData["id"]}`,
         {
           credentials: "include",
         }
