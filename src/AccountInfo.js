@@ -11,7 +11,7 @@ const AccountInfo = () => {
             let response = await fetch(url, {
                 credentials: "include",
                 headers: {
-                    'Access-Control-Allow-Origin' : '*',
+                    'Access-Control-Allow-Origin' : 'https://oyster-app-cxtg3.ondigitalocean.app',
                     'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
                     'Content-Type': 'application/json'
                     // 'Content-Type': 'application/x-www-form-urlencoded'
