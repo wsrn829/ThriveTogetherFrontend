@@ -13,6 +13,8 @@ const AccountInfo = () => {
                 headers: {
                     'Access-Control-Allow-Origin' : '*',
                     'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+                    'Content-Type': 'application/json'
+                    // 'Content-Type': 'application/x-www-form-urlencoded'
                 }
             });
             let data = await response.json();
